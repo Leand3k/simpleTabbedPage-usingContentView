@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="tabbedwithContentView.Views.MainPage"
+             xmlns:views="clr-namespace:tabbedwithContentView.Views" xmlns:viewmodels="clr-namespace:tabbedwithContentView.ViewModels" x:DataType="viewmodels:MenuHomeViewModel">
+
+    <Grid RowDefinitions="Auto, Auto, Auto" ColumnDefinitions="*, *" VerticalOptions="Center" RowSpacing="10" ColumnSpacing="10" Padding="20">
+        <views:MenuView Grid.Column="0" Grid.Row="0" BindingContext="{Binding BarAndHotels}"></views:MenuView>
+        <views:MenuView Grid.Column="0" Grid.Row="1" BindingContext="{Binding Cafes}"></views:MenuView>
+        <views:MenuView Grid.Column="0" Grid.Row="2" BindingContext="{Binding FastFoods}"></views:MenuView>
+        <views:MenuView Grid.Column="1" Grid.Row="0" BindingContext="{Binding FeaturedFoods}"></views:MenuView>
+        <views:MenuView Grid.Column="1" Grid.Row="1" BindingContext="{Binding FineDining}"></views:MenuView>
+        <views:MenuView Grid.Column="1" Grid.Row="2" BindingContext="{Binding Nearby}"></views:MenuView>
+    </Grid>
+</ContentPage>
