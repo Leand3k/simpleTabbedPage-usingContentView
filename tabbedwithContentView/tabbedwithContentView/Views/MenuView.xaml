@@ -5,7 +5,7 @@
 
     <StackLayout>
         <Image Source="{Binding Image}" HeightRequest="50"></Image>
-        <Label Text="{Binding Title}" FontSize="Medium" FontAttributes="Bold"></Label>
+        <Label Text="{Binding Title}" Style="{StaticResource HeaderLabelStyle}"></Label>
         <Label Text="{Binding Detail}" FontSize="Small"></Label>
     </StackLayout>
 </Frame>
